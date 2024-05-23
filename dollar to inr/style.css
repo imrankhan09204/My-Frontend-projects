@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: royalblue;
+}
+
+.wrapper{
+
+    max-width:1000px;
+    min-width: 440px;
+    min-height: 20vh;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: 23%;
+    box-shadow: 1px 1px 10px ;
+}
+
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.5rem;
+
+}
+
+
+.comman{
+
+    position: relative;
+    left: 130px;
+    
+
+}
+
+h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8rem;
+
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    padding: 10px;
+}

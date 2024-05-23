@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollars to rupees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="wrapper">
+
+            <h1>Rs to $ convertor</h1>
+            <div class="rupees comman">
+            <h5>Rupees</h5>
+            <input type="text" placeholder="Rupees" id="Rs">
+            </div>
+
+
+            <div class="dollars comman">
+            <h5>Dollar</h5>
+            <input type="number" placeholder="Dollars" id="Dollar">
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+
+<script>
+
+    let Rupees = document.getElementById('Rs');
+    let dollar = document.getElementById('Dollar');
+
+    dollar.onkeyup = function (){
+        Rupees.value = dollar.value*82.27;
+        
+    }
+
+    Rupees.onkeyup = function (){
+        dollar.value = Rupees.value/82.27
+    }
+</script>
+</html>

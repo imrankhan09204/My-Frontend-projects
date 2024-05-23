@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="weather_content">
+            <div class="left-side">
+                <div class="date-time">
+                    <div id="clock">8:10:45</div>
+                    <div id="date">Sunday, 15 March 2024</div>
+                </div>
+                <div class="temp" id="temp">23&#176C</div>
+            </div>
+            <div class="side_bar">
+                <img src="./images/haze.svg" alt="" id="img">
+                <h1 id="type">Haze</h1>
+
+        
+                    <div class="input-icon">
+                        <input class="inp" type="text" placeholder="Search for a city" id="input">
+                        <button id="btn"><i class="fa fa-search" id="btn-search"></i></button>
+                    </div>
+
+                    <div class="line"></div>
+                    <div class="city_name" id="city_name">
+                        Delhi,India
+                    </div>
+
+                    <div class="weather_info">
+
+                        <div class="weather_card">
+                            <i class="fa-solid fa-temperature-full" id="btn-search"></i>
+        
+                            <div>
+                                <p>Real feel</p>
+                                <p class="weather_realfeel" id="weather_realfeel">1&#176</p>
+                            </div>
+                        </div>
+        
+                        <div class="weather_card">
+                            <i class="fa-solid  fa-droplet" id="btn-search"></i>
+        
+                            <div>
+                                <p>Humidity</p>
+                                <p class="weather_humidity" id="weather_humidity">1&#176</p>
+                            </div>
+                        </div>
+        
+                        <div class="weather_card">
+                            <i class="fa-solid fa-wind" id="btn-search"></i>
+        
+                            <div>
+                                <p>Wind</p>
+                                <p class="weather_wind" id="weather_wind">1&#176</p>
+                            </div>
+                        </div>
+        
+                        <div class="weather_card">
+                            <i class="fa-solid fa-gauge-high" id="btn-search"></i>
+        
+                            <div>
+                                <p>Pressure</p>
+                                <p class="weather_pressure" id="weather_pressure">1&#176</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

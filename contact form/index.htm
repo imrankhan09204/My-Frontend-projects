@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero" id="hero">
+            <h1>GET IN TOUCH</h1>
+
+            <input type="text" placeholder="user_name" id="name">
+            <input type="text" placeholder="Email Id" id="email">
+            <input type="password" placeholder="password." id="pass">
+            <textarea name="" id="" cols="30" rows="10" placeholder="how can we help you?"></textarea>
+            <button>Send</button>
+        </div>
+    </div>
+    
+</body>
+
+    <script>
+        const hero = document.getElementById("hero");
+        const name = document.getElementById('name');
+        const pass = document.getElementById('pass');
+        const email = document.getElementById('email');
+
+        hero.addEventListener('click', e => {
+
+            e.preventDefault();
+
+            validateInputs();
+        });
+
+        const validateInputs = () => {
+            const usernamevalue = name.value.trim();
+            const emailvalue = email.value.trim();
+            const passvalue = pass.value.trim();
+
+            if(usernamevalue === ''){
+                
+                setError(name, 'username is required');
+            }
+
+            else {
+                setSucess(name);
+            }
+        }
+
+    </script>
+
+</html>
